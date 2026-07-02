@@ -8,11 +8,10 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![OpenCV](https://img.shields.io/badge/OpenCV-4.7+-5C3EE8?style=flat-square&logo=opencv&logoColor=white)](https://opencv.org/)
 [![Gradio](https://img.shields.io/badge/Gradio-4.0+-F97316?style=flat-square&logo=gradio&logoColor=white)](https://gradio.app/)
-[![License](https://img.shields.io/badge/License-Apache_2.0-009688?style=for-the-badge&logo=apache&logoColor=white)](LICENSE)
 
-*Real-time udder segmentation · Skin inflammation hotspot mapping · Fine-tuned **ResNet-50** & **MobileNet-V3** CNNs · Gradio web UI*
+*Real-time udder segmentation (YOLOv8-seg) · Auto-labeling (Grounding DINO + SAM) · Fine-tuned **ResNet-50** & **MobileNet-V3** CNNs · Gradio web UI*
 
-[🚀 Quick Start](#-quick-start) · [✨ Features](#-features) · [📁 Project Structure](#-project-structure) · [🔍 Dataset & Annotation](#-dataset--annotation) · [📄 License](#-license)
+[🚀 Quick Start](#-quick-start) · [✨ Features](#-features) · [📁 Project Structure](#-project-structure) · [🔍 Dataset & Annotation](#-dataset--annotation)
 
 </div>
 
@@ -21,13 +20,13 @@
 ## 📖 Overview
 
 This project implements an end-to-end machine learning and computer vision pipeline for **Cattle Mastitis Detection** using raw udder photographs. It includes:
-1. **Automated Annotation:** A python script that indexes raw images, estimates udder bounding boxes, and calculates initial inflammation levels.
-2. **Foreground Segmentation:** Isolating the udder from cluttered barn backgrounds using thresholding and morphological operations.
-3. **Inflammation Mapping:** Detecting reddish skin irritation hotspots using HSV color space segmentation.
+1. **Zero-Shot Auto-Labeling:** A pipeline using Grounding DINO and SAM to automatically outline udders in the raw dataset, generating YOLO polygon masks.
+2. **Deep Learning Segmentation:** Training a custom, lightweight **YOLOv8-seg** model to locate and segment the udder in real-time, completely ignoring legs or ground clutter.
+3. **Inflammation Mapping:** Detecting reddish skin irritation hotspots inside the segmented udder region using HSV color space mapping.
 4. **Deep Learning Classification:** Fine-tuning pre-trained **ResNet-50** and **MobileNet-V3-Large** architectures to identify Mastitis infections.
-5. **Interactive UI:** A dark-themed Gradio dashboard for model selection, localized diagnostic visualization, and real-time inference.
+5. **Interactive UI:** A slate-dark Gradio dashboard for model selection, localized diagnostic visualization, and real-time inference.
 
-> ⚠️ **Disclaimer:** This tool is intended for research, educational, and farm management decision-support purposes. It is not a veterinary diagnostic device and does not replace professional veterinary consultation.
+> ⚠️ **Disclaimer:** This tool is intended for research, educational, and farm management decision-support purposes. It is not a veterinary diagnostic device.
 
 ---
 
@@ -35,36 +34,25 @@ This project implements an end-to-end machine learning and computer vision pipel
 
 ```mermaid
 flowchart TD
-    A[Raw Udder Image] --> B[Otsu Segmentation]
-    B --> C[Largest Contour Isolation]
-    C --> D[Udder Mask & Bounding Box]
-    D --> E[HSV Color Thresholding]
-    E --> F[Redness/Inflammation Mask]
-    D --> G[Cropped Foreground Udder]
-    F --> H[Calculate Inflammation Index]
-    G --> I[CNN Inference]
-    I -->|ResNet-50 / MobileNet-V3| J[Classification Label & Confidence]
-    H --> K[Gradio Dashboard Visualizations]
-    J --> K
+    A[Raw Udder Image] --> B[YOLOv8-seg Udder Segmentation]
+    B --> C[Segmented Foreground Udder]
+    B --> D[HSV Color Space Analysis]
+    D --> E[Redness/Inflammation Mask]
+    E --> F[Calculate Inflammation Index]
+    C --> G[CNN Classifier]
+    G -->|ResNet-50 / MobileNet-V3| H[Classification Label & Confidence]
+    F --> I[Gradio Dashboard Outputs]
+    H --> I
 ```
-
-| Stage | Details |
-|:------|:--------|
-| **Input** | Raw udder photograph (JPG/PNG/JFIF) |
-| **Segmentation** | Grayscale conversion, Gaussian blur, Otsu's thresholding, morphological closing/opening, largest contour extraction. |
-| **Inflammation Detection** | Red color range thresholding in HSV color space restricted within the segmented udder boundary. |
-| **Classification Models** | ResNet-50 (highest capacity) & MobileNet-V3-Large (efficiency for mobile/edge cameras). |
-| **Output** | Prediction label (Healthy / Mastitis), confidence score, cropped udder region, red inflammation hotspot overlay, and Inflammation Index (%). |
 
 ---
 
 ## ✨ Features
 
-* **Real-time Image Processing:** Instantly segments the cow's udder from the background and maps inflammation hotspots on the fly.
-* **Inflammation Index (%):** Quantifies redness on the udder surface ($100 \times \frac{\text{inflamed pixels}}{\text{total udder pixels}}$). Statistically, Mastitis udders display a significantly higher index than healthy ones.
-* **Multi-Model Support:** Easily toggle between ResNet-50 and MobileNet-V3 to contrast predictions.
-* **Edge-Ready Design:** The MobileNet-V3 model is lightweight and highly optimized, suitable for edge devices (such as smart farm cameras).
-* **Multi-GPU Training Configuration:** The Jupyter training notebook is configured to run on Kaggle's dual NVIDIA Tesla T4 GPUs with PyTorch's `DataParallel` wrapper.
+* **Real-time YOLOv8 Segmentation:** Uses a custom-trained, lightweight YOLOv8-seg model to isolate cow udders instantly.
+* **Inflammation Index (%):** Quantifies redness on the udder surface ($100 \times \frac{\text{inflamed pixels}}{\text{total udder pixels}}$).
+* **Multi-Model Support:** Easily toggle between ResNet-50 and MobileNet-V3 to compare predictions.
+* **Edge-Ready Design:** Highly optimized scripts that run locally on a laptop GPU (RTX 3050) or edge camera systems.
 
 ---
 
@@ -73,20 +61,27 @@ flowchart TD
 ```
 Dairy-Mate-Mastitis-Detection/
 │
-├── 🐍 segmentation.py        # Core image segmentation & CV utilities
-├── 🐍 annotate.py            # Automatic dataset annotation & registry script
-├── 📓 train.ipynb            # Training notebook configured for CPU/Kaggle T4 GPUs
-├── 🐍 app.py                 # Gradio dashboard application (script version)
-├── 📓 app.ipynb              # Gradio dashboard application (notebook version)
+├── 📁 src/                   # Active Python source scripts
+│   ├── 🐍 app.py             # Gradio web dashboard
+│   ├── 🐍 segmentation.py    # YOLO segmentation & CV utilities
+│   ├── 🐍 annotate.py        # Dataset index catalog creator
+│   ├── 🐍 auto_annotate.py   # Grounding DINO + SAM auto-labeler
+│   ├── 🐍 train.py           # CNN classifier training script
+│   └── 🐍 train_yolo.py      # YOLOv8-seg training script
+│
+├── 📓 app.ipynb              # Notebook version of the Gradio app
+├── 📓 train.ipynb            # Notebook version of classifier training
 ├── 📋 requirements.txt       # Python environment dependencies
-├── 📄 LICENSE                # Apache License 2.0
+├── 📄 dataset_yolo.yaml      # YOLO dataset configuration
+├── 📄 .gitignore
 │
 ├── 📁 Dataset/               # Cattle udder images (75 Mastitis, 25 Healthy)
 │   ├── 📁 healthy_images/
 │   ├── 📁 Mastitis_images/
-│   └── 📄 annotations.json   # Generated by annotate.py
+│   └── 📄 annotations.json   # Generated by src/annotate.py
 │
-├── 📁 Model/                 # Fine-tuned model weights (safetensors format)
+├── 📁 Model/                 # Fine-tuned model weights
+│   ├── 📄 best_udder_yolo.pt # Custom YOLOv8-seg segmenter
 │   ├── 📄 resnet50_mastitis.safetensors
 │   └── 📄 mobilenetv3_mastitis.safetensors
 │
@@ -95,60 +90,37 @@ Dairy-Mate-Mastitis-Detection/
 
 ---
 
-## 🔍 Dataset & Annotation
-
-The raw dataset contains two categories:
-* **Healthy Images:** 25 files showing normal, uninfected cow udders.
-* **Mastitis Images:** 75 files displaying swollen, inflamed, or red cow udders.
-
-### Automatic Annotation
-Before training, run `python annotate.py`. This script:
-1. Validates all image resolutions.
-2. Extracts class labels.
-3. Automatically computes the udder bounding box using contour detection.
-4. Estimates the initial red inflammation index.
-5. Saves this metadata to `Dataset/annotations.json`.
-
----
-
 ## 🚀 Quick Start
 
 ### 1. Install Dependencies
-
 Ensure you have Python 3.8+ installed, then run:
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Annotate the Raw Images
-
-Run the annotation script to localize udders and generate `Dataset/annotations.json`:
+### 2. Auto-Annotate and Train YOLOv8-seg (Optional)
+If you want to re-generate the dataset and train the YOLO segmenter from scratch:
 ```bash
-python annotate.py
+# 1. Generate YOLO segmentation masks automatically
+python src/auto_annotate.py
+
+# 2. Train custom YOLOv8-seg model
+python src/train_yolo.py
 ```
 
-### 3. Model Training (Optional)
-
-Open `train.ipynb` in VS Code or Jupyter Notebook, or upload it to Kaggle to train the models on your hardware:
-* To train on Kaggle, upload the `Dataset` directory (containing `healthy_images`, `Mastitis_images`, and the generated `annotations.json`).
-* The notebook automatically detects if multiple GPUs are available and uses PyTorch `DataParallel`.
-* Trained weights will be saved as `Model/resnet50_mastitis.safetensors` and `Model/mobilenetv3_mastitis.safetensors`.
-
-### 4. Launch the Diagnostics Dashboard
-
-Start the local dashboard:
+### 3. Catalog Dataset and Train Classifiers (Optional)
+To catalog your classification indices and train ResNet/MobileNet models:
 ```bash
-python app.py
+# 1. Generate annotations.json catalog registry
+python src/annotate.py
+
+# 2. Run classifier training loop
+python src/train.py
 ```
-Or open `app.ipynb` in Jupyter Notebook and run all cells. Open your browser and navigate to **`http://127.0.0.1:7860`**.
 
----
-
-## 🛠️ Tech Stack
-
-* **Python**
-* **PyTorch & TorchVision** (Deep Learning framework)
-* **OpenCV** (Traditional computer vision & segmentation)
-* **Gradio** (Interactive web UI framework)
-* **Pillow** (Image manipulation)
-* **Safetensors** (Safe and fast model serialization)
+### 4. Launch the Web Application
+Start the interactive Gradio dashboard:
+```bash
+python src/app.py
+```
+Or open the `app.ipynb` notebook and run all cells. Open your browser and navigate to **`http://127.0.0.1:7860`**.
