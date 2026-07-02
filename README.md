@@ -7,8 +7,11 @@
 [![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-0099FF?style=flat-square)](https://ultralytics.com/)
-[![Gradio](https://img.shields.io/badge/Gradio-4.0+-F97316?style=flat-square&logo=gradio&logoColor=white)](https://gradio.app/)
+[![Gradio](https://img.shields.io/badge/Gradio-6.19.0-F97316?style=flat-square&logo=gradio&logoColor=white)](https://gradio.app/)
 [![License](https://img.shields.io/badge/License-Apache%202.0-green?style=flat-square)](https://github.com/ameyac11/Dairy_Mate_Round1/blob/main/LICENSE)
+[![HF Space](https://img.shields.io/badge/🤗%20Hugging%20Face-Live%20Demo-yellow?style=flat-square)](https://huggingface.co/spaces/ameyac11/Mastitis_Cow_Detection)
+
+🚀 **[Try the Live Demo](https://huggingface.co/spaces/ameyac11/Mastitis_Cow_Detection)**
 
 </div>
 
