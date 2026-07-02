@@ -1,0 +1,1502 @@
+[
+    {
+        "filepath": "Dataset/healthy_images/6Wznwe2tMpUH4XlUH5bTg6v2h4VdWuu00SaY3uHbfvWHX3vDJlOlmwprG2BzORG5fDSdndApxs-2ovfr0zZaM79RvByFHhtAkXQTyNGb3TqolshMLsdoqPSa7MXaoFRBnkm3c7Qw5UDdSttb8m0U964utp5FkVNWYrT2PSPnuHFsNViYyrMcr.jfif",
+        "filename": "6Wznwe2tMpUH4XlUH5bTg6v2h4VdWuu00SaY3uHbfvWHX3vDJlOlmwprG2BzORG5fDSdndApxs-2ovfr0zZaM79RvByFHhtAkXQTyNGb3TqolshMLsdoqPSa7MXaoFRBnkm3c7Qw5UDdSttb8m0U964utp5FkVNWYrT2PSPnuHFsNViYyrMcr.jfif",
+        "label": "Healthy",
+        "class_id": 0,
+        "width": 2048,
+        "height": 1365,
+        "bbox": [
+            0,
+            0,
+            2048,
+            1365
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/healthy_images/download.jfif",
+        "filename": "download.jfif",
+        "label": "Healthy",
+        "class_id": 0,
+        "width": 275,
+        "height": 183,
+        "bbox": [
+            0,
+            0,
+            275,
+            183
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/healthy_images/images (1).jfif",
+        "filename": "images (1).jfif",
+        "label": "Healthy",
+        "class_id": 0,
+        "width": 275,
+        "height": 183,
+        "bbox": [
+            0,
+            0,
+            275,
+            183
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/healthy_images/images (2).jfif",
+        "filename": "images (2).jfif",
+        "label": "Healthy",
+        "class_id": 0,
+        "width": 318,
+        "height": 159,
+        "bbox": [
+            82,
+            0,
+            236,
+            159
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/healthy_images/images.jfif",
+        "filename": "images.jfif",
+        "label": "Healthy",
+        "class_id": 0,
+        "width": 275,
+        "height": 183,
+        "bbox": [
+            0,
+            0,
+            275,
+            183
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/healthy_images/jCkhd0CivMSFVjkd7e0gaiRJb4CwJLKNWjzIzm1_G-XQle0oUeSiYDFLq-GTOQ3egDC-EKcY-oDoSoy9WdPZL_0RRgVlcscaW0FPh8_PevwMj7w49yRJtggZ7KlZhByuZDvuotZd5yTz_1dvMFfWL9nt6xqDr92qtZAAZ5pTy2NyIRfJKBgPf.jfif",
+        "filename": "jCkhd0CivMSFVjkd7e0gaiRJb4CwJLKNWjzIzm1_G-XQle0oUeSiYDFLq-GTOQ3egDC-EKcY-oDoSoy9WdPZL_0RRgVlcscaW0FPh8_PevwMj7w49yRJtggZ7KlZhByuZDvuotZd5yTz_1dvMFfWL9nt6xqDr92qtZAAZ5pTy2NyIRfJKBgPf.jfif",
+        "label": "Healthy",
+        "class_id": 0,
+        "width": 2048,
+        "height": 1365,
+        "bbox": [
+            0,
+            0,
+            1497,
+            704
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/healthy_images/lOGhxWV0S6CYa9ctYj7s6pWeAytiksKN5fq5nnY38C3N1LFzRXupLSZ-tEydYPrlye_fM0bVH6zGGSJQSru5KBlp8c9sm4KbREzn_0wt5wzmzYjcyG32xfyIUbuBpvfR2R_SfbbEbFiUYtKkNuWkxOHhgz5cer-r9YxhOIcslf-Zq-_ROSt9N.jfif",
+        "filename": "lOGhxWV0S6CYa9ctYj7s6pWeAytiksKN5fq5nnY38C3N1LFzRXupLSZ-tEydYPrlye_fM0bVH6zGGSJQSru5KBlp8c9sm4KbREzn_0wt5wzmzYjcyG32xfyIUbuBpvfR2R_SfbbEbFiUYtKkNuWkxOHhgz5cer-r9YxhOIcslf-Zq-_ROSt9N.jfif",
+        "label": "Healthy",
+        "class_id": 0,
+        "width": 2048,
+        "height": 1370,
+        "bbox": [
+            642,
+            523,
+            1406,
+            847
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/healthy_images/LwvJlSFcJzBAqP24Uj5piEpf3aEH3uAC0vkH73ob-m1VwjrnhuT6fOoYLCmhDaWaCPc5TDUkRS1-h8MiHHjhpAU71tMiphHj63B1UycHsFl1BtefQjhq27TmjHKFKhyktjGr2AERUTrVrvNwpem-qAAsgeRhmVIBkaYTu5xOf49MCrLuulPLz.jfif",
+        "filename": "LwvJlSFcJzBAqP24Uj5piEpf3aEH3uAC0vkH73ob-m1VwjrnhuT6fOoYLCmhDaWaCPc5TDUkRS1-h8MiHHjhpAU71tMiphHj63B1UycHsFl1BtefQjhq27TmjHKFKhyktjGr2AERUTrVrvNwpem-qAAsgeRhmVIBkaYTu5xOf49MCrLuulPLz.jfif",
+        "label": "Healthy",
+        "class_id": 0,
+        "width": 2121,
+        "height": 1414,
+        "bbox": [
+            304,
+            0,
+            1817,
+            1414
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/healthy_images/Screenshot-2024-09-14-161810_png.rf.e311157a7fc3191a372c9e8e0d6f93dc.jpg",
+        "filename": "Screenshot-2024-09-14-161810_png.rf.e311157a7fc3191a372c9e8e0d6f93dc.jpg",
+        "label": "Healthy",
+        "class_id": 0,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            0,
+            0,
+            581,
+            410
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/healthy_images/Screenshot-2024-09-14-161810_png.rf.f98d43cd724418343c63bcdb2badfc6b.jpg",
+        "filename": "Screenshot-2024-09-14-161810_png.rf.f98d43cd724418343c63bcdb2badfc6b.jpg",
+        "label": "Healthy",
+        "class_id": 0,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            59,
+            0,
+            581,
+            410
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/healthy_images/Screenshot-2024-09-14-165915_png.rf.5843d0bea6e34c3fe8f0851422fa96fb.jpg",
+        "filename": "Screenshot-2024-09-14-165915_png.rf.5843d0bea6e34c3fe8f0851422fa96fb.jpg",
+        "label": "Healthy",
+        "class_id": 0,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            0,
+            0,
+            521,
+            508
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/healthy_images/Screenshot-2024-09-14-170222_png.rf.1e04b6448666a811a8489dbf5dbf89eb.jpg",
+        "filename": "Screenshot-2024-09-14-170222_png.rf.1e04b6448666a811a8489dbf5dbf89eb.jpg",
+        "label": "Healthy",
+        "class_id": 0,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            0,
+            0,
+            640,
+            640
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/healthy_images/Screenshot-2024-09-14-170222_png.rf.fde5901d42fbf55ade632d762a3e74ee.jpg",
+        "filename": "Screenshot-2024-09-14-170222_png.rf.fde5901d42fbf55ade632d762a3e74ee.jpg",
+        "label": "Healthy",
+        "class_id": 0,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            0,
+            0,
+            640,
+            640
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/healthy_images/Screenshot-2024-09-14-170639_png.rf.938323ecfaeee9a6d1482d36bd31e5e6.jpg",
+        "filename": "Screenshot-2024-09-14-170639_png.rf.938323ecfaeee9a6d1482d36bd31e5e6.jpg",
+        "label": "Healthy",
+        "class_id": 0,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            0,
+            0,
+            640,
+            640
+        ],
+        "inflammation_index": 0.01
+    },
+    {
+        "filepath": "Dataset/healthy_images/Screenshot-2024-09-14-170728_png.rf.4066a6cbf4ed05492b1b8fdf8d375e77.jpg",
+        "filename": "Screenshot-2024-09-14-170728_png.rf.4066a6cbf4ed05492b1b8fdf8d375e77.jpg",
+        "label": "Healthy",
+        "class_id": 0,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            0,
+            0,
+            640,
+            426
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/healthy_images/Screenshot-2024-09-14-170728_png.rf.a9866881c62cd26f74be1cad8076e060.jpg",
+        "filename": "Screenshot-2024-09-14-170728_png.rf.a9866881c62cd26f74be1cad8076e060.jpg",
+        "label": "Healthy",
+        "class_id": 0,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            0,
+            0,
+            640,
+            426
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/healthy_images/Screenshot-2024-09-14-170818_png.rf.c0f0595866757e0bd66cdc66077c9aa6.jpg",
+        "filename": "Screenshot-2024-09-14-170818_png.rf.c0f0595866757e0bd66cdc66077c9aa6.jpg",
+        "label": "Healthy",
+        "class_id": 0,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            0,
+            82,
+            640,
+            558
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/healthy_images/Screenshot-2024-09-14-170818_png.rf.c6881774fb4c7aa98a4e67e0e655cedc.jpg",
+        "filename": "Screenshot-2024-09-14-170818_png.rf.c6881774fb4c7aa98a4e67e0e655cedc.jpg",
+        "label": "Healthy",
+        "class_id": 0,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            0,
+            82,
+            640,
+            558
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/healthy_images/Screenshot-2024-09-14-170918_png.rf.8fd2122b34b1e3ae46b5738eb282c6d2.jpg",
+        "filename": "Screenshot-2024-09-14-170918_png.rf.8fd2122b34b1e3ae46b5738eb282c6d2.jpg",
+        "label": "Healthy",
+        "class_id": 0,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            0,
+            0,
+            640,
+            640
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/healthy_images/Screenshot-2024-09-14-170918_png.rf.b207dd5cf60b1f1387815976739e308f.jpg",
+        "filename": "Screenshot-2024-09-14-170918_png.rf.b207dd5cf60b1f1387815976739e308f.jpg",
+        "label": "Healthy",
+        "class_id": 0,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            0,
+            0,
+            640,
+            640
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/healthy_images/Screenshot-2024-09-14-174105_png.rf.6bccea106b4dc9a62919c0a193b533eb.jpg",
+        "filename": "Screenshot-2024-09-14-174105_png.rf.6bccea106b4dc9a62919c0a193b533eb.jpg",
+        "label": "Healthy",
+        "class_id": 0,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            0,
+            0,
+            607,
+            640
+        ],
+        "inflammation_index": 0.14
+    },
+    {
+        "filepath": "Dataset/healthy_images/Screenshot-2024-09-14-180013_png.rf.f82a139fe39b81e725065b214169a3b7.jpg",
+        "filename": "Screenshot-2024-09-14-180013_png.rf.f82a139fe39b81e725065b214169a3b7.jpg",
+        "label": "Healthy",
+        "class_id": 0,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            0,
+            0,
+            640,
+            640
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/healthy_images/Screenshot-2024-09-14-180252_png.rf.04cca59c85e54840a4fbf8e217fa4368.jpg",
+        "filename": "Screenshot-2024-09-14-180252_png.rf.04cca59c85e54840a4fbf8e217fa4368.jpg",
+        "label": "Healthy",
+        "class_id": 0,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            0,
+            0,
+            640,
+            640
+        ],
+        "inflammation_index": 0.06
+    },
+    {
+        "filepath": "Dataset/healthy_images/Screenshot-2024-09-14-180324_png.rf.475212411ed60e38240ddf67139ff117.jpg",
+        "filename": "Screenshot-2024-09-14-180324_png.rf.475212411ed60e38240ddf67139ff117.jpg",
+        "label": "Healthy",
+        "class_id": 0,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            400,
+            0,
+            240,
+            640
+        ],
+        "inflammation_index": 9.46
+    },
+    {
+        "filepath": "Dataset/healthy_images/_viTK-3hUddkgn2j7N7gmrr73xRtSQYbJ7qAB1KB0xL-pTh6kAMZ8DimNcbD9UzupLtaBRdB6f7GXoP0kYpk9GUJ5VUl1qvl3K4O4y0F7NZSMZZLzktYDBBCX5nTn4kGVAA1jZcmn2tiAzsywW8ofSBdhgZuHuxkk6ODIbmiVUDDH_4M-Ee2F.jfif",
+        "filename": "_viTK-3hUddkgn2j7N7gmrr73xRtSQYbJ7qAB1KB0xL-pTh6kAMZ8DimNcbD9UzupLtaBRdB6f7GXoP0kYpk9GUJ5VUl1qvl3K4O4y0F7NZSMZZLzktYDBBCX5nTn4kGVAA1jZcmn2tiAzsywW8ofSBdhgZuHuxkk6ODIbmiVUDDH_4M-Ee2F.jfif",
+        "label": "Healthy",
+        "class_id": 0,
+        "width": 2048,
+        "height": 1366,
+        "bbox": [
+            0,
+            0,
+            2048,
+            1366
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/-2024-09-14-161206_png.rf.8a4a1d8064aecc66b203adf5ef34598e.jpg",
+        "filename": "-2024-09-14-161206_png.rf.8a4a1d8064aecc66b203adf5ef34598e.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            0,
+            0,
+            640,
+            640
+        ],
+        "inflammation_index": 0.71
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/-2024-09-14-161206_png.rf.ab8ef16504b3632ea16b0a99edf7845a.jpg",
+        "filename": "-2024-09-14-161206_png.rf.ab8ef16504b3632ea16b0a99edf7845a.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            0,
+            0,
+            640,
+            640
+        ],
+        "inflammation_index": 0.69
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/-2024-09-14-161502_png.rf.55d2937dbc85338cf024e2c5452b556e.jpg",
+        "filename": "-2024-09-14-161502_png.rf.55d2937dbc85338cf024e2c5452b556e.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            10,
+            8,
+            609,
+            632
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/001_30_IMG_gro174291-009-848x565.jpg",
+        "filename": "001_30_IMG_gro174291-009-848x565.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 848,
+        "height": 565,
+        "bbox": [
+            0,
+            0,
+            512,
+            565
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/001_30_IMG_gro174291-009-848x565_jpg.rf.37f9f0d548f15926e9099254fc74dabf.jpg",
+        "filename": "001_30_IMG_gro174291-009-848x565_jpg.rf.37f9f0d548f15926e9099254fc74dabf.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            0,
+            0,
+            386,
+            640
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/1000_F_548951830_wifrxEUNDvvQCf93jbG6hpEJifHAFqoP.jpg",
+        "filename": "1000_F_548951830_wifrxEUNDvvQCf93jbG6hpEJifHAFqoP.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 1000,
+        "height": 667,
+        "bbox": [
+            0,
+            0,
+            780,
+            667
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/10_jpg.rf.fb7d3c13971770dec98395c54362579c.jpg",
+        "filename": "10_jpg.rf.fb7d3c13971770dec98395c54362579c.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            0,
+            0,
+            432,
+            432
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/11_jpg.rf.83520255d6b26927c3b2c991c9e76edb.jpg",
+        "filename": "11_jpg.rf.83520255d6b26927c3b2c991c9e76edb.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            0,
+            0,
+            403,
+            432
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/12_jpg.rf.1fa69ba855ff4460703c064182d81ca5.jpg",
+        "filename": "12_jpg.rf.1fa69ba855ff4460703c064182d81ca5.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            0,
+            163,
+            234,
+            269
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/13_jpg.rf.e5a321a7bcd904a6edd1b626ccca1967.jpg",
+        "filename": "13_jpg.rf.e5a321a7bcd904a6edd1b626ccca1967.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            0,
+            0,
+            432,
+            432
+        ],
+        "inflammation_index": 0.36
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/14_jpg.rf.8cbff7a410808001aea88f8d8a58db74.jpg",
+        "filename": "14_jpg.rf.8cbff7a410808001aea88f8d8a58db74.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            0,
+            0,
+            432,
+            432
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/15_jpg.rf.2f7bd888cfd93f67b73434486d426e88.jpg",
+        "filename": "15_jpg.rf.2f7bd888cfd93f67b73434486d426e88.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            0,
+            0,
+            280,
+            371
+        ],
+        "inflammation_index": 0.02
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/16_jpg.rf.481da87e26713ff5f657e9957905b473.jpg",
+        "filename": "16_jpg.rf.481da87e26713ff5f657e9957905b473.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            0,
+            0,
+            432,
+            432
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/17_jpg.rf.b772a94491ff4ca11caf38da92c7ceb0.jpg",
+        "filename": "17_jpg.rf.b772a94491ff4ca11caf38da92c7ceb0.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            207,
+            0,
+            225,
+            432
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/18_jpg.rf.7b88f8370adaf975ceb4189f4e11e90c.jpg",
+        "filename": "18_jpg.rf.7b88f8370adaf975ceb4189f4e11e90c.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            0,
+            0,
+            432,
+            432
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/19_jpg.rf.dbb366b983db540a5683e46b2c9b5d77.jpg",
+        "filename": "19_jpg.rf.dbb366b983db540a5683e46b2c9b5d77.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            0,
+            0,
+            432,
+            432
+        ],
+        "inflammation_index": 0.08
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/1_jpg.rf.5b84f34e1faee357ff8e4d68cc718d10.jpg",
+        "filename": "1_jpg.rf.5b84f34e1faee357ff8e4d68cc718d10.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            0,
+            0,
+            270,
+            432
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/20_jpg.rf.c21135f28ad947dead07577dce4c9a5f.jpg",
+        "filename": "20_jpg.rf.c21135f28ad947dead07577dce4c9a5f.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            0,
+            0,
+            432,
+            432
+        ],
+        "inflammation_index": 0.66
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/21_jpg.rf.0c82b56744fcc8a1f4a2eb81827bd9a3.jpg",
+        "filename": "21_jpg.rf.0c82b56744fcc8a1f4a2eb81827bd9a3.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            44,
+            0,
+            388,
+            432
+        ],
+        "inflammation_index": 6.31
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/22_jpg.rf.77ae432b5d2044cb74302eac3182120a.jpg",
+        "filename": "22_jpg.rf.77ae432b5d2044cb74302eac3182120a.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            0,
+            0,
+            214,
+            432
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/23_jpeg.rf.1617eb2acb2332880c536e45b6b72e93.jpg",
+        "filename": "23_jpeg.rf.1617eb2acb2332880c536e45b6b72e93.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            0,
+            0,
+            640,
+            431
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/23_jpeg.rf.ada319489317450d31095fe77189d762.jpg",
+        "filename": "23_jpeg.rf.ada319489317450d31095fe77189d762.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            0,
+            0,
+            640,
+            432
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/23_jpeg.rf.f1b64322491ad6d7537ce4d27ae9523c.jpg",
+        "filename": "23_jpeg.rf.f1b64322491ad6d7537ce4d27ae9523c.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            0,
+            0,
+            621,
+            425
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/23_jpg.rf.1c046cf3f0a09dd527a26322e275bb26.jpg",
+        "filename": "23_jpg.rf.1c046cf3f0a09dd527a26322e275bb26.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            0,
+            0,
+            298,
+            432
+        ],
+        "inflammation_index": 3.3
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/240_F_155018831_EyDhiC4ePRRmtvwX0FtBCs81QTLqyBY3.jpg",
+        "filename": "240_F_155018831_EyDhiC4ePRRmtvwX0FtBCs81QTLqyBY3.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 360,
+        "height": 240,
+        "bbox": [
+            0,
+            0,
+            360,
+            240
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/240_F_1780828400_QStQozZEMkWDbVHGEeRwMkzwED2W33fH.jpg",
+        "filename": "240_F_1780828400_QStQozZEMkWDbVHGEeRwMkzwED2W33fH.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 160,
+        "height": 240,
+        "bbox": [
+            37,
+            0,
+            75,
+            120
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/240_F_1868619507_6zXuop1PtoHmFcde7jYmCGbmLZkzsgCB.jpg",
+        "filename": "240_F_1868619507_6zXuop1PtoHmFcde7jYmCGbmLZkzsgCB.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 426,
+        "height": 240,
+        "bbox": [
+            0,
+            44,
+            426,
+            196
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/240_F_1986947201_J97kGaYlcr696nCxSzGX8CDYqIWMStrt.jpg",
+        "filename": "240_F_1986947201_J97kGaYlcr696nCxSzGX8CDYqIWMStrt.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 360,
+        "height": 240,
+        "bbox": [
+            0,
+            0,
+            360,
+            195
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/240_F_372046735_M85sTBNW4SxhMeGU3RWOvVplgejubGqo.jpg",
+        "filename": "240_F_372046735_M85sTBNW4SxhMeGU3RWOvVplgejubGqo.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 320,
+        "height": 240,
+        "bbox": [
+            0,
+            0,
+            320,
+            240
+        ],
+        "inflammation_index": 0.54
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/240_F_433594014_22nuebsgKHnVbwaoby4kKPy7ytZHGAe9.jpg",
+        "filename": "240_F_433594014_22nuebsgKHnVbwaoby4kKPy7ytZHGAe9.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 360,
+        "height": 240,
+        "bbox": [
+            55,
+            0,
+            305,
+            240
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/240_F_480163976_zHnoitsyUbCJ5JzECJxELQ9bQpvwk5af.jpg",
+        "filename": "240_F_480163976_zHnoitsyUbCJ5JzECJxELQ9bQpvwk5af.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 360,
+        "height": 240,
+        "bbox": [
+            37,
+            0,
+            323,
+            240
+        ],
+        "inflammation_index": 2.61
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/240_F_493193259_pnqUqBtqStbEMJp0uuG64sO2hSntZhHk.jpg",
+        "filename": "240_F_493193259_pnqUqBtqStbEMJp0uuG64sO2hSntZhHk.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 360,
+        "height": 240,
+        "bbox": [
+            0,
+            0,
+            178,
+            240
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/240_F_528089658_2P7ESqgzMvU27TFztthf8W1ccTZdxK21.jpg",
+        "filename": "240_F_528089658_2P7ESqgzMvU27TFztthf8W1ccTZdxK21.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 360,
+        "height": 240,
+        "bbox": [
+            0,
+            0,
+            360,
+            240
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/240_F_548951778_cJGPP0OX9bfxDoTpTcCBVbkPW5LgHhQp.jpg",
+        "filename": "240_F_548951778_cJGPP0OX9bfxDoTpTcCBVbkPW5LgHhQp.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 360,
+        "height": 240,
+        "bbox": [
+            93,
+            18,
+            267,
+            201
+        ],
+        "inflammation_index": 0.02
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/240_F_585751793_mKTQAo6X7CdBx2utfdQq10iKSPOCzdkr.jpg",
+        "filename": "240_F_585751793_mKTQAo6X7CdBx2utfdQq10iKSPOCzdkr.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 336,
+        "height": 240,
+        "bbox": [
+            0,
+            0,
+            247,
+            167
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/240_F_746743021_vchQTWNC0muZHEoqVniR7NSm5rtIMbzr.jpg",
+        "filename": "240_F_746743021_vchQTWNC0muZHEoqVniR7NSm5rtIMbzr.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 360,
+        "height": 240,
+        "bbox": [
+            0,
+            0,
+            320,
+            215
+        ],
+        "inflammation_index": 0.2
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/240_F_875515345_BeMuhC5mEvbT9qe6zcgWqJqkHwMGXQIc.jpg",
+        "filename": "240_F_875515345_BeMuhC5mEvbT9qe6zcgWqJqkHwMGXQIc.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 360,
+        "height": 240,
+        "bbox": [
+            0,
+            20,
+            56,
+            220
+        ],
+        "inflammation_index": 0.04
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/240_F_90587795_CHJlv2Q6g1suXH1UyS1iTGmPuNna1Ai4.jpg",
+        "filename": "240_F_90587795_CHJlv2Q6g1suXH1UyS1iTGmPuNna1Ai4.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 360,
+        "height": 240,
+        "bbox": [
+            0,
+            0,
+            360,
+            240
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/24_jpg.rf.341c6a4ccd2e75db5a8d9f6796da5cdd.jpg",
+        "filename": "24_jpg.rf.341c6a4ccd2e75db5a8d9f6796da5cdd.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            0,
+            0,
+            432,
+            432
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/25_jpg.rf.7d040cfc96c131d1bc15f07cbdb59993.jpg",
+        "filename": "25_jpg.rf.7d040cfc96c131d1bc15f07cbdb59993.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            0,
+            0,
+            432,
+            432
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/26_jpeg.rf.91040432211f65330c22c98c933334f1.jpg",
+        "filename": "26_jpeg.rf.91040432211f65330c22c98c933334f1.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            0,
+            0,
+            389,
+            640
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/26_jpg.rf.1f590defc3c55448f692567c0b3db5e0.jpg",
+        "filename": "26_jpg.rf.1f590defc3c55448f692567c0b3db5e0.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            0,
+            0,
+            432,
+            432
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/27_jpeg.rf.2d591c895010a7acfb7b35e41f587a8b.jpg",
+        "filename": "27_jpeg.rf.2d591c895010a7acfb7b35e41f587a8b.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            0,
+            0,
+            640,
+            640
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/27_jpeg.rf.fd26157e364895b64782f17b2d484e02.jpg",
+        "filename": "27_jpeg.rf.fd26157e364895b64782f17b2d484e02.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            0,
+            0,
+            640,
+            598
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/27_jpg.rf.b7da385504f3e0c5d29bc87ce411808d.jpg",
+        "filename": "27_jpg.rf.b7da385504f3e0c5d29bc87ce411808d.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            0,
+            0,
+            432,
+            432
+        ],
+        "inflammation_index": 0.01
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/28_jpg.rf.0b336240e85c73340aed6eeb9109c8a2.jpg",
+        "filename": "28_jpg.rf.0b336240e85c73340aed6eeb9109c8a2.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            0,
+            0,
+            299,
+            432
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/29_jpg.rf.22b6ba7de77d1dbea6330d6a2756cfd9.jpg",
+        "filename": "29_jpg.rf.22b6ba7de77d1dbea6330d6a2756cfd9.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            157,
+            33,
+            275,
+            362
+        ],
+        "inflammation_index": 0.23
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/2_jpg.rf.2a674e0f15f188b559ffbb3eb4ef113c.jpg",
+        "filename": "2_jpg.rf.2a674e0f15f188b559ffbb3eb4ef113c.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            14,
+            0,
+            298,
+            432
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/30_jpg.rf.2289531af63f80b1e60de3f4454d5740.jpg",
+        "filename": "30_jpg.rf.2289531af63f80b1e60de3f4454d5740.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            44,
+            40,
+            304,
+            392
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/31_jpg.rf.74150d66bc14ddcedf192930a7210661.jpg",
+        "filename": "31_jpg.rf.74150d66bc14ddcedf192930a7210661.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            0,
+            0,
+            432,
+            343
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/32_jpg.rf.269b5691e10f70551ce55533781640fe.jpg",
+        "filename": "32_jpg.rf.269b5691e10f70551ce55533781640fe.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            79,
+            0,
+            353,
+            432
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/33_jpg.rf.c4e24eb2dac9996dbf416cc8e8b2d270.jpg",
+        "filename": "33_jpg.rf.c4e24eb2dac9996dbf416cc8e8b2d270.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            67,
+            0,
+            345,
+            236
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/34_jpg.rf.4df3239e5be5fb657d654ee8938e4b2d.jpg",
+        "filename": "34_jpg.rf.4df3239e5be5fb657d654ee8938e4b2d.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            0,
+            0,
+            389,
+            388
+        ],
+        "inflammation_index": 0.35
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/3_jpg.rf.19e2216ba66fff3604197657f3b456a1.jpg",
+        "filename": "3_jpg.rf.19e2216ba66fff3604197657f3b456a1.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            0,
+            0,
+            91,
+            376
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/4_jpg.rf.39cc4d836322f6a6222958f9deb24000.jpg",
+        "filename": "4_jpg.rf.39cc4d836322f6a6222958f9deb24000.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            0,
+            0,
+            432,
+            260
+        ],
+        "inflammation_index": 90.19
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/5_jpg.rf.bc182fa01244e6d29b8a25800300d079.jpg",
+        "filename": "5_jpg.rf.bc182fa01244e6d29b8a25800300d079.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            0,
+            0,
+            432,
+            419
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/6_jpg.rf.d6761d48bcce09d4824724c7a3f543e8.jpg",
+        "filename": "6_jpg.rf.d6761d48bcce09d4824724c7a3f543e8.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            124,
+            83,
+            148,
+            221
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/7.jpeg",
+        "filename": "7.jpeg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 275,
+        "height": 183,
+        "bbox": [
+            0,
+            0,
+            275,
+            183
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/7_jpeg.rf.5d35999a6f55f639f5a7fdc9d69f933d.jpg",
+        "filename": "7_jpeg.rf.5d35999a6f55f639f5a7fdc9d69f933d.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            148,
+            0,
+            492,
+            533
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/7_jpg.rf.222a7ef4b62bef0c812a59657c4644de.jpg",
+        "filename": "7_jpg.rf.222a7ef4b62bef0c812a59657c4644de.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            228,
+            0,
+            204,
+            432
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/8.jpeg",
+        "filename": "8.jpeg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 335,
+        "height": 150,
+        "bbox": [
+            102,
+            0,
+            233,
+            150
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/8_jpeg.rf.59dde8dd00e699c955aa87853804df6a.jpg",
+        "filename": "8_jpeg.rf.59dde8dd00e699c955aa87853804df6a.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            193,
+            0,
+            447,
+            640
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/8_jpeg.rf.bb90bc1e945dc6c68009fa4cb9569a79.jpg",
+        "filename": "8_jpeg.rf.bb90bc1e945dc6c68009fa4cb9569a79.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            194,
+            0,
+            446,
+            640
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/8_jpg.rf.5b9f0eb797767193e3963292b9a5d7f1.jpg",
+        "filename": "8_jpg.rf.5b9f0eb797767193e3963292b9a5d7f1.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            0,
+            0,
+            372,
+            377
+        ],
+        "inflammation_index": 0.07
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/9_jpg.rf.e4d6da6c1de9be2464d1e6fa9e521e5a.jpg",
+        "filename": "9_jpg.rf.e4d6da6c1de9be2464d1e6fa9e521e5a.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 432,
+        "height": 432,
+        "bbox": [
+            0,
+            0,
+            432,
+            432
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/AdobeStock_16321284_Preview_jpeg.rf.f08222d492a9c19f37e6ecbde4b38a0c.jpg",
+        "filename": "AdobeStock_16321284_Preview_jpeg.rf.f08222d492a9c19f37e6ecbde4b38a0c.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            17,
+            0,
+            623,
+            640
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/AdobeStock_16321284_Preview_jpeg.rf.f3eb1be3f78be79368f7d84371e4338d.jpg",
+        "filename": "AdobeStock_16321284_Preview_jpeg.rf.f3eb1be3f78be79368f7d84371e4338d.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            0,
+            0,
+            640,
+            640
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/AdobeStock_23228077_Preview_jpeg.rf.ca02f82ef5f2b7c8c47c0bf2d864175a.jpg",
+        "filename": "AdobeStock_23228077_Preview_jpeg.rf.ca02f82ef5f2b7c8c47c0bf2d864175a.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            0,
+            0,
+            230,
+            640
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/AdobeStock_23574098_Preview_jpeg.rf.65aebc1a1d4b8eba7933eb0c758439c5.jpg",
+        "filename": "AdobeStock_23574098_Preview_jpeg.rf.65aebc1a1d4b8eba7933eb0c758439c5.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            60,
+            0,
+            580,
+            640
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/AdobeStock_24627891_Preview_jpeg.rf.2c9bd904496b60614059f8b28701ee49.jpg",
+        "filename": "AdobeStock_24627891_Preview_jpeg.rf.2c9bd904496b60614059f8b28701ee49.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            127,
+            0,
+            513,
+            640
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/AdobeStock_43573999_Preview_jpeg.rf.a6d650bf0d26ef53096670318d8f8537.jpg",
+        "filename": "AdobeStock_43573999_Preview_jpeg.rf.a6d650bf0d26ef53096670318d8f8537.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            0,
+            0,
+            419,
+            610
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/AdobeStock_52578000_Preview_jpeg.rf.ab0fa1df9146789847ca2f64945e2434.jpg",
+        "filename": "AdobeStock_52578000_Preview_jpeg.rf.ab0fa1df9146789847ca2f64945e2434.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            0,
+            0,
+            640,
+            640
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/AdobeStock_54701172_Preview_jpeg.rf.bdb69e8ab0f88ee37fcdfd82a983805b.jpg",
+        "filename": "AdobeStock_54701172_Preview_jpeg.rf.bdb69e8ab0f88ee37fcdfd82a983805b.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            0,
+            0,
+            640,
+            618
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/AdobeStock_8294503_Preview_jpeg.rf.158214bf413109ee424f000217f83e6b.jpg",
+        "filename": "AdobeStock_8294503_Preview_jpeg.rf.158214bf413109ee424f000217f83e6b.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            0,
+            0,
+            400,
+            442
+        ],
+        "inflammation_index": 0.0
+    },
+    {
+        "filepath": "Dataset/Mastitis_images/AdobeStock_8294503_Preview_jpeg.rf.37cb882a646f8500b5390861af0e3c1b.jpg",
+        "filename": "AdobeStock_8294503_Preview_jpeg.rf.37cb882a646f8500b5390861af0e3c1b.jpg",
+        "label": "Mastitis",
+        "class_id": 1,
+        "width": 640,
+        "height": 640,
+        "bbox": [
+            239,
+            0,
+            401,
+            440
+        ],
+        "inflammation_index": 0.0
+    }
+]
