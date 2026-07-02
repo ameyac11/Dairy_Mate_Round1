@@ -8,6 +8,7 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-0099FF?style=flat-square)](https://ultralytics.com/)
 [![Gradio](https://img.shields.io/badge/Gradio-4.0+-F97316?style=flat-square&logo=gradio&logoColor=white)](https://gradio.app/)
+[![License](https://img.shields.io/badge/License-Apache%202.0-green?style=flat-square)](https://github.com/ameyac11/Dairy_Mate_Round1/blob/main/LICENSE)
 
 </div>
 
@@ -122,3 +123,12 @@ Or open `app.ipynb` in Jupyter and run all cells.
 | **OpenCV** | Image processing and visualization |
 | **Gradio** | Interactive web UI |
 | **Safetensors** | Model weight serialization |
+
+---
+
+## 📄 License
+
+This project is licensed under the **Apache License 2.0**.
+See the [LICENSE](https://github.com/ameyac11/Dairy_Mate_Round1/blob/main/LICENSE) file for full details.
+
+
