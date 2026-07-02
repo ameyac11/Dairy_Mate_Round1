@@ -1,5 +1,5 @@
 names:
   0: udder
-path: C:/Users/AMEYA CHOPADE/Desktop/Dairy Mate Round 1/dataset_yolo
+path: c:/Users/AMEYA CHOPADE/Desktop/Dairy Mate Round 1/dataset_yolo
 train: images/train
 val: images/val

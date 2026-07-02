@@ -7,10 +7,10 @@
         "width": 2048,
         "height": 1365,
         "bbox": [
-            0,
-            0,
-            2048,
-            1365
+            17,
+            41,
+            1752,
+            1169
         ],
         "inflammation_index": 0.0
     },
@@ -22,9 +22,9 @@
         "width": 275,
         "height": 183,
         "bbox": [
+            8,
             0,
-            0,
-            275,
+            265,
             183
         ],
         "inflammation_index": 0.0
@@ -37,9 +37,9 @@
         "width": 275,
         "height": 183,
         "bbox": [
+            1,
             0,
-            0,
-            275,
+            170,
             183
         ],
         "inflammation_index": 0.0
@@ -52,12 +52,12 @@
         "width": 318,
         "height": 159,
         "bbox": [
-            82,
             0,
-            236,
+            0,
+            253,
             159
         ],
-        "inflammation_index": 0.0
+        "inflammation_index": 0.09
     },
     {
         "filepath": "Dataset/healthy_images/images.jfif",
@@ -69,10 +69,10 @@
         "bbox": [
             0,
             0,
-            275,
-            183
+            268,
+            180
         ],
-        "inflammation_index": 0.0
+        "inflammation_index": 0.33
     },
     {
         "filepath": "Dataset/healthy_images/jCkhd0CivMSFVjkd7e0gaiRJb4CwJLKNWjzIzm1_G-XQle0oUeSiYDFLq-GTOQ3egDC-EKcY-oDoSoy9WdPZL_0RRgVlcscaW0FPh8_PevwMj7w49yRJtggZ7KlZhByuZDvuotZd5yTz_1dvMFfWL9nt6xqDr92qtZAAZ5pTy2NyIRfJKBgPf.jfif",
@@ -82,10 +82,10 @@
         "width": 2048,
         "height": 1365,
         "bbox": [
-            0,
-            0,
-            1497,
-            704
+            16,
+            2,
+            1679,
+            1049
         ],
         "inflammation_index": 0.0
     },
@@ -97,10 +97,10 @@
         "width": 2048,
         "height": 1370,
         "bbox": [
-            642,
-            523,
-            1406,
-            847
+            525,
+            0,
+            1314,
+            1356
         ],
         "inflammation_index": 0.0
     },
@@ -112,10 +112,10 @@
         "width": 2121,
         "height": 1414,
         "bbox": [
-            304,
-            0,
-            1817,
-            1414
+            4,
+            4,
+            1589,
+            1410
         ],
         "inflammation_index": 0.0
     },
@@ -129,8 +129,8 @@
         "bbox": [
             0,
             0,
-            581,
-            410
+            640,
+            532
         ],
         "inflammation_index": 0.0
     },
@@ -142,10 +142,10 @@
         "width": 640,
         "height": 640,
         "bbox": [
-            59,
             0,
-            581,
-            410
+            0,
+            530,
+            545
         ],
         "inflammation_index": 0.0
     },
@@ -157,10 +157,10 @@
         "width": 640,
         "height": 640,
         "bbox": [
+            3,
             0,
-            0,
-            521,
-            508
+            542,
+            566
         ],
         "inflammation_index": 0.0
     },
@@ -172,10 +172,10 @@
         "width": 640,
         "height": 640,
         "bbox": [
-            0,
-            0,
-            640,
-            640
+            43,
+            3,
+            597,
+            620
         ],
         "inflammation_index": 0.0
     },
@@ -188,9 +188,9 @@
         "height": 640,
         "bbox": [
             0,
-            0,
-            640,
-            640
+            3,
+            609,
+            617
         ],
         "inflammation_index": 0.0
     },
@@ -202,10 +202,10 @@
         "width": 640,
         "height": 640,
         "bbox": [
-            0,
-            0,
-            640,
-            640
+            156,
+            9,
+            483,
+            586
         ],
         "inflammation_index": 0.01
     },
@@ -220,9 +220,9 @@
             0,
             0,
             640,
-            426
+            625
         ],
-        "inflammation_index": 0.0
+        "inflammation_index": 10.44
     },
     {
         "filepath": "Dataset/healthy_images/Screenshot-2024-09-14-170728_png.rf.a9866881c62cd26f74be1cad8076e060.jpg",
@@ -233,11 +233,11 @@
         "height": 640,
         "bbox": [
             0,
-            0,
+            7,
             640,
-            426
+            632
         ],
-        "inflammation_index": 0.0
+        "inflammation_index": 12.0
     },
     {
         "filepath": "Dataset/healthy_images/Screenshot-2024-09-14-170818_png.rf.c0f0595866757e0bd66cdc66077c9aa6.jpg",
@@ -248,9 +248,9 @@
         "height": 640,
         "bbox": [
             0,
-            82,
+            0,
             640,
-            558
+            640
         ],
         "inflammation_index": 0.0
     },
@@ -262,10 +262,10 @@
         "width": 640,
         "height": 640,
         "bbox": [
-            0,
+            79,
             82,
-            640,
-            558
+            387,
+            383
         ],
         "inflammation_index": 0.0
     },
@@ -277,10 +277,10 @@
         "width": 640,
         "height": 640,
         "bbox": [
+            1,
             0,
-            0,
-            640,
-            640
+            537,
+            625
         ],
         "inflammation_index": 0.0
     },
@@ -292,10 +292,10 @@
         "width": 640,
         "height": 640,
         "bbox": [
-            0,
-            0,
-            640,
-            640
+            25,
+            4,
+            615,
+            582
         ],
         "inflammation_index": 0.0
     },
@@ -307,12 +307,12 @@
         "width": 640,
         "height": 640,
         "bbox": [
-            0,
-            0,
-            607,
-            640
+            398,
+            330,
+            188,
+            309
         ],
-        "inflammation_index": 0.14
+        "inflammation_index": 0.0
     },
     {
         "filepath": "Dataset/healthy_images/Screenshot-2024-09-14-180013_png.rf.f82a139fe39b81e725065b214169a3b7.jpg",
@@ -322,10 +322,10 @@
         "width": 640,
         "height": 640,
         "bbox": [
-            0,
-            0,
-            640,
-            640
+            258,
+            48,
+            253,
+            422
         ],
         "inflammation_index": 0.0
     },
@@ -339,10 +339,10 @@
         "bbox": [
             0,
             0,
-            640,
-            640
+            577,
+            513
         ],
-        "inflammation_index": 0.06
+        "inflammation_index": 0.02
     },
     {
         "filepath": "Dataset/healthy_images/Screenshot-2024-09-14-180324_png.rf.475212411ed60e38240ddf67139ff117.jpg",
@@ -352,12 +352,12 @@
         "width": 640,
         "height": 640,
         "bbox": [
-            400,
-            0,
-            240,
-            640
+            9,
+            4,
+            464,
+            458
         ],
-        "inflammation_index": 9.46
+        "inflammation_index": 0.0
     },
     {
         "filepath": "Dataset/healthy_images/_viTK-3hUddkgn2j7N7gmrr73xRtSQYbJ7qAB1KB0xL-pTh6kAMZ8DimNcbD9UzupLtaBRdB6f7GXoP0kYpk9GUJ5VUl1qvl3K4O4y0F7NZSMZZLzktYDBBCX5nTn4kGVAA1jZcmn2tiAzsywW8ofSBdhgZuHuxkk6ODIbmiVUDDH_4M-Ee2F.jfif",
@@ -368,9 +368,9 @@
         "height": 1366,
         "bbox": [
             0,
-            0,
-            2048,
-            1366
+            368,
+            1311,
+            998
         ],
         "inflammation_index": 0.0
     },
@@ -382,12 +382,12 @@
         "width": 640,
         "height": 640,
         "bbox": [
-            0,
-            0,
-            640,
-            640
+            243,
+            51,
+            233,
+            490
         ],
-        "inflammation_index": 0.71
+        "inflammation_index": 0.0
     },
     {
         "filepath": "Dataset/Mastitis_images/-2024-09-14-161206_png.rf.ab8ef16504b3632ea16b0a99edf7845a.jpg",
@@ -397,12 +397,12 @@
         "width": 640,
         "height": 640,
         "bbox": [
-            0,
-            0,
-            640,
-            640
+            163,
+            56,
+            225,
+            439
         ],
-        "inflammation_index": 0.69
+        "inflammation_index": 0.0
     },
     {
         "filepath": "Dataset/Mastitis_images/-2024-09-14-161502_png.rf.55d2937dbc85338cf024e2c5452b556e.jpg",
@@ -412,12 +412,12 @@
         "width": 640,
         "height": 640,
         "bbox": [
-            10,
-            8,
-            609,
-            632
+            7,
+            3,
+            633,
+            606
         ],
-        "inflammation_index": 0.0
+        "inflammation_index": 0.02
     },
     {
         "filepath": "Dataset/Mastitis_images/001_30_IMG_gro174291-009-848x565.jpg",
@@ -427,9 +427,9 @@
         "width": 848,
         "height": 565,
         "bbox": [
+            5,
             0,
-            0,
-            512,
+            826,
             565
         ],
         "inflammation_index": 0.0
@@ -442,10 +442,10 @@
         "width": 640,
         "height": 640,
         "bbox": [
-            0,
-            0,
-            386,
-            640
+            4,
+            9,
+            636,
+            631
         ],
         "inflammation_index": 0.0
     },
@@ -457,10 +457,10 @@
         "width": 1000,
         "height": 667,
         "bbox": [
-            0,
-            0,
-            780,
-            667
+            2,
+            1,
+            691,
+            456
         ],
         "inflammation_index": 0.0
     },
@@ -473,11 +473,11 @@
         "height": 432,
         "bbox": [
             0,
-            0,
+            2,
             432,
-            432
+            428
         ],
-        "inflammation_index": 0.0
+        "inflammation_index": 0.05
     },
     {
         "filepath": "Dataset/Mastitis_images/11_jpg.rf.83520255d6b26927c3b2c991c9e76edb.jpg",
@@ -487,10 +487,10 @@
         "width": 432,
         "height": 432,
         "bbox": [
-            0,
-            0,
-            403,
-            432
+            1,
+            5,
+            430,
+            426
         ],
         "inflammation_index": 0.0
     },
@@ -503,9 +503,9 @@
         "height": 432,
         "bbox": [
             0,
-            163,
-            234,
-            269
+            4,
+            432,
+            426
         ],
         "inflammation_index": 0.0
     },
@@ -517,12 +517,12 @@
         "width": 432,
         "height": 432,
         "bbox": [
+            12,
             0,
-            0,
-            432,
-            432
+            420,
+            431
         ],
-        "inflammation_index": 0.36
+        "inflammation_index": 0.33
     },
     {
         "filepath": "Dataset/Mastitis_images/14_jpg.rf.8cbff7a410808001aea88f8d8a58db74.jpg",
@@ -533,9 +533,9 @@
         "height": 432,
         "bbox": [
             0,
-            0,
+            4,
             432,
-            432
+            423
         ],
         "inflammation_index": 0.0
     },
@@ -547,12 +547,12 @@
         "width": 432,
         "height": 432,
         "bbox": [
-            0,
-            0,
-            280,
-            371
+            38,
+            3,
+            301,
+            410
         ],
-        "inflammation_index": 0.02
+        "inflammation_index": 0.0
     },
     {
         "filepath": "Dataset/Mastitis_images/16_jpg.rf.481da87e26713ff5f657e9957905b473.jpg",
@@ -562,10 +562,10 @@
         "width": 432,
         "height": 432,
         "bbox": [
-            0,
-            0,
-            432,
-            432
+            153,
+            4,
+            216,
+            315
         ],
         "inflammation_index": 0.0
     },
@@ -577,10 +577,10 @@
         "width": 432,
         "height": 432,
         "bbox": [
-            207,
             0,
-            225,
-            432
+            6,
+            431,
+            424
         ],
         "inflammation_index": 0.0
     },
@@ -593,9 +593,9 @@
         "height": 432,
         "bbox": [
             0,
-            0,
-            432,
-            432
+            2,
+            338,
+            427
         ],
         "inflammation_index": 0.0
     },
@@ -608,11 +608,11 @@
         "height": 432,
         "bbox": [
             0,
-            0,
-            432,
-            432
+            4,
+            370,
+            410
         ],
-        "inflammation_index": 0.08
+        "inflammation_index": 0.14
     },
     {
         "filepath": "Dataset/Mastitis_images/1_jpg.rf.5b84f34e1faee357ff8e4d68cc718d10.jpg",
@@ -623,9 +623,9 @@
         "height": 432,
         "bbox": [
             0,
-            0,
-            270,
-            432
+            5,
+            428,
+            426
         ],
         "inflammation_index": 0.0
     },
@@ -637,12 +637,12 @@
         "width": 432,
         "height": 432,
         "bbox": [
-            0,
-            0,
-            432,
-            432
+            1,
+            7,
+            322,
+            409
         ],
-        "inflammation_index": 0.66
+        "inflammation_index": 0.0
     },
     {
         "filepath": "Dataset/Mastitis_images/21_jpg.rf.0c82b56744fcc8a1f4a2eb81827bd9a3.jpg",
@@ -652,12 +652,12 @@
         "width": 432,
         "height": 432,
         "bbox": [
-            44,
-            0,
-            388,
-            432
+            1,
+            4,
+            431,
+            428
         ],
-        "inflammation_index": 6.31
+        "inflammation_index": 2.36
     },
     {
         "filepath": "Dataset/Mastitis_images/22_jpg.rf.77ae432b5d2044cb74302eac3182120a.jpg",
@@ -667,10 +667,10 @@
         "width": 432,
         "height": 432,
         "bbox": [
+            36,
             0,
-            0,
-            214,
-            432
+            329,
+            417
         ],
         "inflammation_index": 0.0
     },
@@ -685,9 +685,9 @@
             0,
             0,
             640,
-            431
+            628
         ],
-        "inflammation_index": 0.0
+        "inflammation_index": 0.52
     },
     {
         "filepath": "Dataset/Mastitis_images/23_jpeg.rf.ada319489317450d31095fe77189d762.jpg",
@@ -698,11 +698,11 @@
         "height": 640,
         "bbox": [
             0,
-            0,
+            5,
             640,
-            432
+            635
         ],
-        "inflammation_index": 0.0
+        "inflammation_index": 0.58
     },
     {
         "filepath": "Dataset/Mastitis_images/23_jpeg.rf.f1b64322491ad6d7537ce4d27ae9523c.jpg",
@@ -713,11 +713,11 @@
         "height": 640,
         "bbox": [
             0,
-            0,
-            621,
-            425
+            3,
+            640,
+            614
         ],
-        "inflammation_index": 0.0
+        "inflammation_index": 0.38
     },
     {
         "filepath": "Dataset/Mastitis_images/23_jpg.rf.1c046cf3f0a09dd527a26322e275bb26.jpg",
@@ -727,12 +727,12 @@
         "width": 432,
         "height": 432,
         "bbox": [
-            0,
-            0,
-            298,
-            432
+            1,
+            3,
+            431,
+            427
         ],
-        "inflammation_index": 3.3
+        "inflammation_index": 0.38
     },
     {
         "filepath": "Dataset/Mastitis_images/240_F_155018831_EyDhiC4ePRRmtvwX0FtBCs81QTLqyBY3.jpg",
@@ -742,10 +742,10 @@
         "width": 360,
         "height": 240,
         "bbox": [
-            0,
-            0,
-            360,
-            240
+            1,
+            19,
+            316,
+            209
         ],
         "inflammation_index": 0.0
     },
@@ -757,10 +757,10 @@
         "width": 160,
         "height": 240,
         "bbox": [
-            37,
             0,
-            75,
-            120
+            1,
+            160,
+            228
         ],
         "inflammation_index": 0.0
     },
@@ -772,12 +772,12 @@
         "width": 426,
         "height": 240,
         "bbox": [
-            0,
-            44,
-            426,
-            196
+            142,
+            46,
+            231,
+            163
         ],
-        "inflammation_index": 0.0
+        "inflammation_index": 1.13
     },
     {
         "filepath": "Dataset/Mastitis_images/240_F_1986947201_J97kGaYlcr696nCxSzGX8CDYqIWMStrt.jpg",
@@ -787,10 +787,10 @@
         "width": 360,
         "height": 240,
         "bbox": [
-            0,
-            0,
-            360,
-            195
+            115,
+            5,
+            244,
+            229
         ],
         "inflammation_index": 0.0
     },
@@ -804,10 +804,10 @@
         "bbox": [
             0,
             0,
-            320,
-            240
+            278,
+            232
         ],
-        "inflammation_index": 0.54
+        "inflammation_index": 0.0
     },
     {
         "filepath": "Dataset/Mastitis_images/240_F_433594014_22nuebsgKHnVbwaoby4kKPy7ytZHGAe9.jpg",
@@ -817,7 +817,7 @@
         "width": 360,
         "height": 240,
         "bbox": [
-            55,
+            0,
             0,
             305,
             240
@@ -832,12 +832,12 @@
         "width": 360,
         "height": 240,
         "bbox": [
-            37,
-            0,
-            323,
-            240
+            1,
+            1,
+            302,
+            239
         ],
-        "inflammation_index": 2.61
+        "inflammation_index": 0.0
     },
     {
         "filepath": "Dataset/Mastitis_images/240_F_493193259_pnqUqBtqStbEMJp0uuG64sO2hSntZhHk.jpg",
@@ -847,10 +847,10 @@
         "width": 360,
         "height": 240,
         "bbox": [
+            168,
             0,
-            0,
-            178,
-            240
+            135,
+            204
         ],
         "inflammation_index": 0.0
     },
@@ -862,9 +862,9 @@
         "width": 360,
         "height": 240,
         "bbox": [
+            7,
             0,
-            0,
-            360,
+            324,
             240
         ],
         "inflammation_index": 0.0
@@ -877,12 +877,12 @@
         "width": 360,
         "height": 240,
         "bbox": [
-            93,
-            18,
-            267,
-            201
+            56,
+            0,
+            229,
+            240
         ],
-        "inflammation_index": 0.02
+        "inflammation_index": 0.0
     },
     {
         "filepath": "Dataset/Mastitis_images/240_F_585751793_mKTQAo6X7CdBx2utfdQq10iKSPOCzdkr.jpg",
@@ -892,10 +892,10 @@
         "width": 336,
         "height": 240,
         "bbox": [
+            7,
             0,
-            0,
-            247,
-            167
+            255,
+            240
         ],
         "inflammation_index": 0.0
     },
@@ -907,12 +907,12 @@
         "width": 360,
         "height": 240,
         "bbox": [
-            0,
-            0,
-            320,
-            215
+            81,
+            1,
+            241,
+            205
         ],
-        "inflammation_index": 0.2
+        "inflammation_index": 0.0
     },
     {
         "filepath": "Dataset/Mastitis_images/240_F_875515345_BeMuhC5mEvbT9qe6zcgWqJqkHwMGXQIc.jpg",
@@ -922,12 +922,12 @@
         "width": 360,
         "height": 240,
         "bbox": [
+            42,
             0,
-            20,
-            56,
-            220
+            270,
+            163
         ],
-        "inflammation_index": 0.04
+        "inflammation_index": 0.28
     },
     {
         "filepath": "Dataset/Mastitis_images/240_F_90587795_CHJlv2Q6g1suXH1UyS1iTGmPuNna1Ai4.jpg",
@@ -937,10 +937,10 @@
         "width": 360,
         "height": 240,
         "bbox": [
-            0,
-            0,
-            360,
-            240
+            96,
+            2,
+            220,
+            193
         ],
         "inflammation_index": 0.0
     },
@@ -968,11 +968,11 @@
         "height": 432,
         "bbox": [
             0,
-            0,
-            432,
-            432
+            2,
+            409,
+            430
         ],
-        "inflammation_index": 0.0
+        "inflammation_index": 1.44
     },
     {
         "filepath": "Dataset/Mastitis_images/26_jpeg.rf.91040432211f65330c22c98c933334f1.jpg",
@@ -983,9 +983,9 @@
         "height": 640,
         "bbox": [
             0,
-            0,
-            389,
-            640
+            5,
+            640,
+            635
         ],
         "inflammation_index": 0.0
     },
@@ -998,11 +998,11 @@
         "height": 432,
         "bbox": [
             0,
-            0,
-            432,
-            432
+            2,
+            411,
+            430
         ],
-        "inflammation_index": 0.0
+        "inflammation_index": 1.43
     },
     {
         "filepath": "Dataset/Mastitis_images/27_jpeg.rf.2d591c895010a7acfb7b35e41f587a8b.jpg",
@@ -1030,7 +1030,7 @@
             0,
             0,
             640,
-            598
+            640
         ],
         "inflammation_index": 0.0
     },
@@ -1042,12 +1042,12 @@
         "width": 432,
         "height": 432,
         "bbox": [
+            1,
             0,
-            0,
-            432,
-            432
+            373,
+            352
         ],
-        "inflammation_index": 0.01
+        "inflammation_index": 0.0
     },
     {
         "filepath": "Dataset/Mastitis_images/28_jpg.rf.0b336240e85c73340aed6eeb9109c8a2.jpg",
@@ -1058,9 +1058,9 @@
         "height": 432,
         "bbox": [
             0,
-            0,
-            299,
-            432
+            2,
+            300,
+            300
         ],
         "inflammation_index": 0.0
     },
@@ -1072,12 +1072,12 @@
         "width": 432,
         "height": 432,
         "bbox": [
-            157,
-            33,
-            275,
-            362
+            46,
+            0,
+            384,
+            432
         ],
-        "inflammation_index": 0.23
+        "inflammation_index": 0.0
     },
     {
         "filepath": "Dataset/Mastitis_images/2_jpg.rf.2a674e0f15f188b559ffbb3eb4ef113c.jpg",
@@ -1087,10 +1087,10 @@
         "width": 432,
         "height": 432,
         "bbox": [
-            14,
-            0,
-            298,
-            432
+            8,
+            2,
+            424,
+            430
         ],
         "inflammation_index": 0.0
     },
@@ -1102,10 +1102,10 @@
         "width": 432,
         "height": 432,
         "bbox": [
-            44,
-            40,
-            304,
-            392
+            77,
+            215,
+            187,
+            162
         ],
         "inflammation_index": 0.0
     },
@@ -1118,9 +1118,9 @@
         "height": 432,
         "bbox": [
             0,
-            0,
-            432,
-            343
+            7,
+            303,
+            339
         ],
         "inflammation_index": 0.0
     },
@@ -1132,10 +1132,10 @@
         "width": 432,
         "height": 432,
         "bbox": [
-            79,
+            74,
             0,
-            353,
-            432
+            344,
+            429
         ],
         "inflammation_index": 0.0
     },
@@ -1147,10 +1147,10 @@
         "width": 432,
         "height": 432,
         "bbox": [
-            67,
-            0,
-            345,
-            236
+            1,
+            2,
+            430,
+            429
         ],
         "inflammation_index": 0.0
     },
@@ -1162,12 +1162,12 @@
         "width": 432,
         "height": 432,
         "bbox": [
-            0,
-            0,
-            389,
-            388
+            96,
+            3,
+            330,
+            382
         ],
-        "inflammation_index": 0.35
+        "inflammation_index": 0.01
     },
     {
         "filepath": "Dataset/Mastitis_images/3_jpg.rf.19e2216ba66fff3604197657f3b456a1.jpg",
@@ -1177,10 +1177,10 @@
         "width": 432,
         "height": 432,
         "bbox": [
-            0,
-            0,
-            91,
-            376
+            126,
+            134,
+            135,
+            296
         ],
         "inflammation_index": 0.0
     },
@@ -1192,12 +1192,12 @@
         "width": 432,
         "height": 432,
         "bbox": [
+            10,
             0,
-            0,
-            432,
-            260
+            379,
+            384
         ],
-        "inflammation_index": 90.19
+        "inflammation_index": 35.81
     },
     {
         "filepath": "Dataset/Mastitis_images/5_jpg.rf.bc182fa01244e6d29b8a25800300d079.jpg",
@@ -1208,9 +1208,9 @@
         "height": 432,
         "bbox": [
             0,
-            0,
-            432,
-            419
+            4,
+            412,
+            372
         ],
         "inflammation_index": 0.0
     },
@@ -1222,9 +1222,9 @@
         "width": 432,
         "height": 432,
         "bbox": [
-            124,
-            83,
-            148,
+            86,
+            82,
+            304,
             221
         ],
         "inflammation_index": 0.0
@@ -1237,9 +1237,9 @@
         "width": 275,
         "height": 183,
         "bbox": [
+            5,
             0,
-            0,
-            275,
+            263,
             183
         ],
         "inflammation_index": 0.0
@@ -1252,10 +1252,10 @@
         "width": 640,
         "height": 640,
         "bbox": [
-            148,
-            0,
-            492,
-            533
+            4,
+            6,
+            585,
+            614
         ],
         "inflammation_index": 0.0
     },
@@ -1267,10 +1267,10 @@
         "width": 432,
         "height": 432,
         "bbox": [
-            228,
             0,
-            204,
-            432
+            6,
+            432,
+            425
         ],
         "inflammation_index": 0.0
     },
@@ -1282,10 +1282,10 @@
         "width": 335,
         "height": 150,
         "bbox": [
-            102,
+            30,
             0,
-            233,
-            150
+            303,
+            149
         ],
         "inflammation_index": 0.0
     },
@@ -1297,9 +1297,9 @@
         "width": 640,
         "height": 640,
         "bbox": [
-            193,
+            106,
             0,
-            447,
+            534,
             640
         ],
         "inflammation_index": 0.0
@@ -1312,9 +1312,9 @@
         "width": 640,
         "height": 640,
         "bbox": [
-            194,
+            115,
             0,
-            446,
+            525,
             640
         ],
         "inflammation_index": 0.0
@@ -1327,12 +1327,12 @@
         "width": 432,
         "height": 432,
         "bbox": [
+            4,
             0,
-            0,
-            372,
-            377
+            428,
+            432
         ],
-        "inflammation_index": 0.07
+        "inflammation_index": 0.14
     },
     {
         "filepath": "Dataset/Mastitis_images/9_jpg.rf.e4d6da6c1de9be2464d1e6fa9e521e5a.jpg",
@@ -1343,11 +1343,11 @@
         "height": 432,
         "bbox": [
             0,
-            0,
+            2,
             432,
-            432
+            427
         ],
-        "inflammation_index": 0.0
+        "inflammation_index": 0.05
     },
     {
         "filepath": "Dataset/Mastitis_images/AdobeStock_16321284_Preview_jpeg.rf.f08222d492a9c19f37e6ecbde4b38a0c.jpg",
@@ -1357,10 +1357,10 @@
         "width": 640,
         "height": 640,
         "bbox": [
-            17,
-            0,
-            623,
-            640
+            244,
+            116,
+            203,
+            331
         ],
         "inflammation_index": 0.0
     },
@@ -1372,10 +1372,10 @@
         "width": 640,
         "height": 640,
         "bbox": [
-            0,
-            0,
-            640,
-            640
+            186,
+            122,
+            206,
+            323
         ],
         "inflammation_index": 0.0
     },
@@ -1387,10 +1387,10 @@
         "width": 640,
         "height": 640,
         "bbox": [
-            0,
-            0,
-            230,
-            640
+            161,
+            2,
+            317,
+            625
         ],
         "inflammation_index": 0.0
     },
@@ -1402,10 +1402,10 @@
         "width": 640,
         "height": 640,
         "bbox": [
-            60,
             0,
-            580,
-            640
+            0,
+            575,
+            598
         ],
         "inflammation_index": 0.0
     },
@@ -1417,9 +1417,9 @@
         "width": 640,
         "height": 640,
         "bbox": [
-            127,
             0,
-            513,
+            0,
+            504,
             640
         ],
         "inflammation_index": 0.0
@@ -1434,8 +1434,8 @@
         "bbox": [
             0,
             0,
-            419,
-            610
+            342,
+            617
         ],
         "inflammation_index": 0.0
     },
@@ -1447,10 +1447,10 @@
         "width": 640,
         "height": 640,
         "bbox": [
-            0,
-            0,
-            640,
-            640
+            139,
+            3,
+            333,
+            536
         ],
         "inflammation_index": 0.0
     },
@@ -1463,11 +1463,11 @@
         "height": 640,
         "bbox": [
             0,
-            0,
-            640,
-            618
+            9,
+            583,
+            631
         ],
-        "inflammation_index": 0.0
+        "inflammation_index": 0.16
     },
     {
         "filepath": "Dataset/Mastitis_images/AdobeStock_8294503_Preview_jpeg.rf.158214bf413109ee424f000217f83e6b.jpg",
@@ -1477,10 +1477,10 @@
         "width": 640,
         "height": 640,
         "bbox": [
-            0,
-            0,
-            400,
-            442
+            1,
+            9,
+            417,
+            604
         ],
         "inflammation_index": 0.0
     },
@@ -1492,10 +1492,10 @@
         "width": 640,
         "height": 640,
         "bbox": [
-            239,
-            0,
-            401,
-            440
+            190,
+            4,
+            450,
+            584
         ],
         "inflammation_index": 0.0
     }

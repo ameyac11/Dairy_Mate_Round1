@@ -16,7 +16,7 @@ ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 ANNOTATIONS_PATH = os.path.join(ROOT_DIR, "Dataset", "annotations.json")
 MODEL_DIR = os.path.join(ROOT_DIR, "Model")
 
-num_epochs = 15
+num_epochs = 30
 batch_size = 16
 learning_rate = 0.0001
 seed = 42
@@ -27,33 +27,23 @@ if torch.cuda.is_available():
     torch.cuda.manual_seed_all(seed)
 
 class IndexedMastitisDataset(Dataset):
-    def __init__(self, annotations, indices, transform=None, crop_to_udder=True):
+    def __init__(self, annotations, indices, transform=None):
         self.annotations = [annotations[i] for i in indices]
         self.transform = transform
-        self.crop_to_udder = crop_to_udder
         
     def __len__(self):
         return len(self.annotations)
         
     def __getitem__(self, idx):
         item = self.annotations[idx]
-        img_path = item['filepath']
-        
-        if not os.path.isabs(img_path):
-            img_path = os.path.join(ROOT_DIR, img_path)
-            
-        if not os.path.exists(img_path):
-            base_name = os.path.basename(img_path)
-            folder_name = "healthy_images" if item['class_id'] == 0 else "Mastitis_images"
-            img_path = os.path.join(ROOT_DIR, "Dataset", folder_name, base_name)
-            
+        img_path = os.path.join(ROOT_DIR, item['filepath'])
         img = Image.open(img_path).convert('RGB')
         
-        if self.crop_to_udder and 'bbox' in item:
-            x, y, w, h = item['bbox']
-            if w > 0 and h > 0:
-                img = img.crop((x, y, x + w, y + h))
-                
+        # Crop to udder bounding box
+        x, y, w, h = item['bbox']
+        if w > 0 and h > 0:
+            img = img.crop((x, y, x + w, y + h))
+            
         if self.transform:
             img = self.transform(img)
             

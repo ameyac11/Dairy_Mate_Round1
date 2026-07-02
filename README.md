@@ -2,16 +2,12 @@
 
 # 🐄 Dairy Mate: Cattle Mastitis Detection Dashboard
 
-**An interactive computer vision and deep learning application for automated cattle udder health monitoring**
+**An end-to-end machine learning pipeline for automated cattle udder health monitoring**
 
 [![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)](https://pytorch.org/)
-[![OpenCV](https://img.shields.io/badge/OpenCV-4.7+-5C3EE8?style=flat-square&logo=opencv&logoColor=white)](https://opencv.org/)
+[![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-0099FF?style=flat-square)](https://ultralytics.com/)
 [![Gradio](https://img.shields.io/badge/Gradio-4.0+-F97316?style=flat-square&logo=gradio&logoColor=white)](https://gradio.app/)
-
-*Real-time udder segmentation (YOLOv8-seg) · Auto-labeling (Grounding DINO + SAM) · Fine-tuned **ResNet-50** & **MobileNet-V3** CNNs · Gradio web UI*
-
-[🚀 Quick Start](#-quick-start) · [✨ Features](#-features) · [📁 Project Structure](#-project-structure) · [🔍 Dataset & Annotation](#-dataset--annotation)
 
 </div>
 
@@ -19,40 +15,13 @@
 
 ## 📖 Overview
 
-This project implements an end-to-end machine learning and computer vision pipeline for **Cattle Mastitis Detection** using raw udder photographs. It includes:
-1. **Zero-Shot Auto-Labeling:** A pipeline using Grounding DINO and SAM to automatically outline udders in the raw dataset, generating YOLO polygon masks.
-2. **Deep Learning Segmentation:** Training a custom, lightweight **YOLOv8-seg** model to locate and segment the udder in real-time, completely ignoring legs or ground clutter.
-3. **Inflammation Mapping:** Detecting reddish skin irritation hotspots inside the segmented udder region using HSV color space mapping.
-4. **Deep Learning Classification:** Fine-tuning pre-trained **ResNet-50** and **MobileNet-V3-Large** architectures to identify Mastitis infections.
-5. **Interactive UI:** A slate-dark Gradio dashboard for model selection, localized diagnostic visualization, and real-time inference.
+This project implements an end-to-end ML and computer vision pipeline for **Cattle Mastitis Detection** using raw udder photographs. The pipeline includes:
 
-> ⚠️ **Disclaimer:** This tool is intended for research, educational, and farm management decision-support purposes. It is not a veterinary diagnostic device.
-
----
-
-## 🔄 Pipeline Workflow
-
-```mermaid
-flowchart TD
-    A[Raw Udder Image] --> B[YOLOv8-seg Udder Segmentation]
-    B --> C[Segmented Foreground Udder]
-    B --> D[HSV Color Space Analysis]
-    D --> E[Redness/Inflammation Mask]
-    E --> F[Calculate Inflammation Index]
-    C --> G[CNN Classifier]
-    G -->|ResNet-50 / MobileNet-V3| H[Classification Label & Confidence]
-    F --> I[Gradio Dashboard Outputs]
-    H --> I
-```
-
----
-
-## ✨ Features
-
-* **Real-time YOLOv8 Segmentation:** Uses a custom-trained, lightweight YOLOv8-seg model to isolate cow udders instantly.
-* **Inflammation Index (%):** Quantifies redness on the udder surface ($100 \times \frac{\text{inflamed pixels}}{\text{total udder pixels}}$).
-* **Multi-Model Support:** Easily toggle between ResNet-50 and MobileNet-V3 to compare predictions.
-* **Edge-Ready Design:** Highly optimized scripts that run locally on a laptop GPU (RTX 3050) or edge camera systems.
+1. **Zero-Shot Auto-Labeling** — Grounding DINO + SAM automatically outlines udders in images, generating YOLO training masks with no manual drawing.
+2. **YOLOv8-seg Segmentation** — A custom-trained lightweight segmentation model isolates the udder in real-time, ignoring legs and background clutter.
+3. **Inflammation Mapping** — Red skin irritation hotspots are detected inside the YOLO mask using HSV color thresholding.
+4. **CNN Classification** — Fine-tuned ResNet-50 and MobileNet-V3 classify the isolated udder as **Healthy** or **Mastitis**.
+5. **Gradio Web UI** — An interactive dashboard for uploading images and viewing diagnostic results.
 
 ---
 
@@ -61,66 +30,95 @@ flowchart TD
 ```
 Dairy-Mate-Mastitis-Detection/
 │
-├── 📁 src/                   # Active Python source scripts
-│   ├── 🐍 app.py             # Gradio web dashboard
-│   ├── 🐍 segmentation.py    # YOLO segmentation & CV utilities
-│   ├── 🐍 annotate.py        # Dataset index catalog creator
-│   ├── 🐍 auto_annotate.py   # Grounding DINO + SAM auto-labeler
-│   ├── 🐍 train.py           # CNN classifier training script
-│   └── 🐍 train_yolo.py      # YOLOv8-seg training script
+├── 📁 src/                     # All source scripts
+│   ├── app.py                  # ▶ Run to launch the web app
+│   ├── segmentation.py         # YOLO inference & inflammation mapping
+│   ├── auto_annotate.py        # ▶ Run once to auto-label dataset (Grounding DINO + SAM)
+│   ├── annotate.py             # ▶ Run after auto_annotate to build annotations.json
+│   ├── train_yolo.py           # ▶ Run to train the YOLOv8-seg model
+│   └── train.py                # ▶ Run to train ResNet-50 and MobileNet-V3
 │
-├── 📓 app.ipynb              # Notebook version of the Gradio app
-├── 📓 train.ipynb            # Notebook version of classifier training
-├── 📋 requirements.txt       # Python environment dependencies
-├── 📄 dataset_yolo.yaml      # YOLO dataset configuration
-├── 📄 .gitignore
+├── 📓 app.ipynb                # Notebook version of the web app
+├── 📓 train.ipynb              # Notebook version of classifier training
+├── 📋 requirements.txt         # Python dependencies
+├── 📄 dataset_yolo.yaml        # YOLO dataset config (auto-generated)
 │
-├── 📁 Dataset/               # Cattle udder images (75 Mastitis, 25 Healthy)
-│   ├── 📁 healthy_images/
-│   ├── 📁 Mastitis_images/
-│   └── 📄 annotations.json   # Generated by src/annotate.py
+├── 📁 Dataset/
+│   ├── healthy_images/         # 25 healthy cow udder images
+│   ├── Mastitis_images/        # 75 mastitis cow udder images
+│   └── annotations.json        # Generated by src/annotate.py
 │
-├── 📁 Model/                 # Fine-tuned model weights
-│   ├── 📄 best_udder_yolo.pt # Custom YOLOv8-seg segmenter
-│   ├── 📄 resnet50_mastitis.safetensors
-│   └── 📄 mobilenetv3_mastitis.safetensors
+├── 📁 Model/                   # Trained model weights
+│   ├── best_udder_yolo.pt      # YOLOv8-seg udder segmentation model
+│   ├── resnet50_mastitis.safetensors
+│   └── mobilenetv3_mastitis.safetensors
 │
-└── 📁 examples/              # Sample images for testing in the UI
+└── 📁 examples/                # Sample images shown in the web app
 ```
 
 ---
 
 ## 🚀 Quick Start
 
-### 1. Install Dependencies
-Ensure you have Python 3.8+ installed, then run:
+### Step 1 — Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Auto-Annotate and Train YOLOv8-seg (Optional)
-If you want to re-generate the dataset and train the YOLO segmenter from scratch:
-```bash
-# 1. Generate YOLO segmentation masks automatically
-python src/auto_annotate.py
+---
 
-# 2. Train custom YOLOv8-seg model
+### Step 2 — Auto-Label the Dataset
+> Run this **once** to automatically detect and outline udders in all 100 images using Grounding DINO + SAM. Outputs annotated label files into `dataset_yolo/`.
+```bash
+python src/auto_annotate.py
+```
+
+---
+
+### Step 3 — Build the Classification Catalog
+> Run this **once** after Step 2 to scan the dataset, compute udder bounding boxes and inflammation indices, and save metadata to `Dataset/annotations.json`.
+```bash
+python src/annotate.py
+```
+
+---
+
+### Step 4 — Train the YOLOv8-seg Segmentation Model
+> Run this to train the lightweight YOLOv8-seg model on the auto-labeled dataset. Saves the best weights to `Model/best_udder_yolo.pt`.
+```bash
 python src/train_yolo.py
 ```
 
-### 3. Catalog Dataset and Train Classifiers (Optional)
-To catalog your classification indices and train ResNet/MobileNet models:
-```bash
-# 1. Generate annotations.json catalog registry
-python src/annotate.py
+---
 
-# 2. Run classifier training loop
+### Step 5 — Train the Classification Models
+> Run this to fine-tune ResNet-50 and MobileNet-V3 on the annotated dataset. Saves weights to `Model/`.
+```bash
 python src/train.py
 ```
 
-### 4. Launch the Web Application
-Start the interactive Gradio dashboard:
+---
+
+### Step 6 — Launch the Web Application
+> Run this to start the interactive Gradio dashboard. Open your browser at **`http://127.0.0.1:7860`**.
 ```bash
 python src/app.py
 ```
-Or open the `app.ipynb` notebook and run all cells. Open your browser and navigate to **`http://127.0.0.1:7860`**.
+Or open `app.ipynb` in Jupyter and run all cells.
+
+---
+
+> **Note:** Steps 2–5 are already completed. All trained model weights are included in the `Model/` directory. You only need to run **Step 6** to launch the app.
+
+---
+
+## 🛠️ Tech Stack
+
+| Library | Purpose |
+|:--------|:--------|
+| **PyTorch** | Model training and inference |
+| **Ultralytics YOLOv8** | Real-time udder segmentation |
+| **Hugging Face Transformers** | Grounding DINO + SAM for auto-labeling |
+| **OpenCV** | Image processing and visualization |
+| **Gradio** | Interactive web UI |
+| **Safetensors** | Model weight serialization |
