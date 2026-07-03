@@ -1,36 +1,44 @@
 <div align="center">
-
 # 🐄 Dairy Mate: Cattle Mastitis Detection Dashboard
-
+ 
 **An end-to-end machine learning pipeline for automated cattle udder health monitoring**
-
+ 
 [![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-0099FF?style=flat-square)](https://ultralytics.com/)
 [![Gradio](https://img.shields.io/badge/Gradio-6.19.0-F97316?style=flat-square&logo=gradio&logoColor=white)](https://gradio.app/)
 [![License](https://img.shields.io/badge/License-Apache%202.0-green?style=flat-square)](https://github.com/ameyac11/Dairy_Mate_Round1/blob/main/LICENSE)
 [![HF Space](https://img.shields.io/badge/🤗%20Hugging%20Face-Live%20Demo-yellow?style=flat-square)](https://huggingface.co/spaces/ameyac11/Mastitis_Cow_Detection)
-
+ 
 🚀 **[Try the Live Demo](https://huggingface.co/spaces/ameyac11/Mastitis_Cow_Detection)**
-
+ 
 </div>
-
 ---
-
+ 
+## 👥 Team
+ 
+Built for **Round 1 – Mastitis Detection Model Challenge**
+ 
+| Name | 
+|:-----|
+| Ameya Chopade |
+| Dushyant Dhote |
+ 
+---
+ 
 ## 📖 Overview
-
+ 
 This project implements an end-to-end ML and computer vision pipeline for **Cattle Mastitis Detection** using raw udder photographs. The pipeline includes:
-
+ 
 1. **Zero-Shot Auto-Labeling** — Grounding DINO + SAM automatically outlines udders in images, generating YOLO training masks with no manual drawing.
 2. **YOLOv8-seg Segmentation** — A custom-trained lightweight segmentation model isolates the udder in real-time, ignoring legs and background clutter.
 3. **Inflammation Mapping** — Red skin irritation hotspots are detected inside the YOLO mask using HSV color thresholding.
 4. **CNN Classification** — Fine-tuned ResNet-50 and MobileNet-V3 classify the isolated udder as **Healthy** or **Mastitis**.
 5. **Gradio Web UI** — An interactive dashboard for uploading images and viewing diagnostic results.
-
 ---
-
+ 
 ## 📁 Project Structure
-
+ 
 ```
 Dairy-Mate-Mastitis-Detection/
 │
@@ -59,65 +67,79 @@ Dairy-Mate-Mastitis-Detection/
 │
 └── 📁 examples/                # Sample images shown in the web app
 ```
-
+ 
 ---
-
+ 
 ## 🚀 Quick Start
-
+ 
 ### Step 1 — Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
-
+ 
 ---
-
+ 
 ### Step 2 — Auto-Label the Dataset
 > Run this **once** to automatically detect and outline udders in all 100 images using Grounding DINO + SAM. Outputs annotated label files into `dataset_yolo/`.
 ```bash
 python src/auto_annotate.py
 ```
-
+ 
 ---
-
+ 
 ### Step 3 — Build the Classification Catalog
 > Run this **once** after Step 2 to scan the dataset, compute udder bounding boxes and inflammation indices, and save metadata to `Dataset/annotations.json`.
 ```bash
 python src/annotate.py
 ```
-
+ 
 ---
-
+ 
 ### Step 4 — Train the YOLOv8-seg Segmentation Model
 > Run this to train the lightweight YOLOv8-seg model on the auto-labeled dataset. Saves the best weights to `Model/best_udder_yolo.pt`.
 ```bash
 python src/train_yolo.py
 ```
-
+ 
 ---
-
+ 
 ### Step 5 — Train the Classification Models
 > Run this to fine-tune ResNet-50 and MobileNet-V3 on the annotated dataset. Saves weights to `Model/`.
 ```bash
 python src/train.py
 ```
-
+ 
 ---
-
+ 
 ### Step 6 — Launch the Web Application
 > Run this to start the interactive Gradio dashboard. Open your browser at **`http://127.0.0.1:7860`**.
 ```bash
 python src/app.py
 ```
 Or open `app.ipynb` in Jupyter and run all cells.
-
+ 
 ---
-
+ 
 > **Note:** Steps 2–5 are already completed. All trained model weights are included in the `Model/` directory. You only need to run **Step 6** to launch the app.
-
+ 
 ---
-
+ 
+## ✅ Pipeline vs. Challenge Requirements
+ 
+| Requirement | How We Addressed It |
+|:--|:--|
+| **Data Annotation** | Instead of manually drawing 100 udder masks, we used **Grounding DINO + SAM** in a zero-shot auto-labeling step (`auto_annotate.py`) to generate accurate udder segmentation masks automatically, saving annotation time while keeping labels consistent. |
+| **Image Segmentation** | A lightweight **YOLOv8-seg** model was trained on the auto-generated masks (`train_yolo.py`) to isolate the udder region in real time and exclude legs/background clutter from downstream analysis. |
+| **Preprocessing** | `annotate.py` crops each image to the YOLO-predicted udder region, computes an inflammation index via HSV color thresholding on skin redness, and compiles everything into `Dataset/annotations.json` as model-ready input. |
+| **Model Selection** | We chose **ResNet-50** and **MobileNet-V3** as parallel classifiers — ResNet-50 for stronger accuracy as a benchmark, MobileNet-V3 as a lightweight option suited for edge/real-time deployment on farms. Both are fine-tuned rather than trained from scratch, which is appropriate given the small (100-image) dataset. |
+| **Model Training & Development** | `train.py` fine-tunes both classifiers on the segmented, preprocessed udder crops and saves weights in `.safetensors` format under `Model/`. |
+ 
+**Why this architecture?** Splitting segmentation (YOLOv8-seg) from classification (ResNet-50/MobileNet-V3) rather than using one end-to-end network lets each stage be optimized independently: the segmentation step only needs to learn "where is the udder," which auto-labeling handles well even with limited data, while the classifier only has to reason about the isolated udder region — reducing background noise and making the most of a small, class-imbalanced (25 healthy / 75 mastitis) dataset.
+ 
+---
+ 
 ## 🛠️ Tech Stack
-
+ 
 | Library | Purpose |
 |:--------|:--------|
 | **PyTorch** | Model training and inference |
@@ -126,12 +148,10 @@ Or open `app.ipynb` in Jupyter and run all cells.
 | **OpenCV** | Image processing and visualization |
 | **Gradio** | Interactive web UI |
 | **Safetensors** | Model weight serialization |
-
+ 
 ---
-
+ 
 ## 📄 License
-
+ 
 This project is licensed under the **Apache License 2.0**.
 See the [LICENSE](https://github.com/ameyac11/Dairy_Mate_Round1/blob/main/LICENSE) file for full details.
-
-
