@@ -23,8 +23,8 @@ resnet50 = models.resnet50(weights=models.ResNet50_Weights.IMAGENET1K_V1)
 resnet50.fc = nn.Linear(resnet50.fc.in_features, num_classes)
 try:
     load_model(resnet50, os.path.join(ROOT_DIR, "Model", "resnet50_mastitis.safetensors"))
-except Exception:
-    pass
+except Exception as e:
+    print(f"[WARNING] Could not load fine-tuned ResNet-50 weights, using ImageNet weights instead. Reason: {e}")
 resnet50 = resnet50.to(device).eval()
 
 # Load MobileNet-V3
@@ -32,8 +32,8 @@ mobilenet = models.mobilenet_v3_large(weights=models.MobileNet_V3_Large_Weights.
 mobilenet.classifier[3] = nn.Linear(mobilenet.classifier[3].in_features, num_classes)
 try:
     load_model(mobilenet, os.path.join(ROOT_DIR, "Model", "mobilenetv3_mastitis.safetensors"))
-except Exception:
-    pass
+except Exception as e:
+    print(f"[WARNING] Could not load fine-tuned MobileNet-V3 weights, using ImageNet weights instead. Reason: {e}")
 mobilenet = mobilenet.to(device).eval()
 
 transform = transforms.Compose([
