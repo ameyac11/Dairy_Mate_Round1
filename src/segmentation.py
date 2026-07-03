@@ -37,7 +37,11 @@ def load_image_as_numpy(image_input):
 def segment_udder(image_bgr):
     h, w = image_bgr.shape[:2]
     
-    # Run YOLO segmentation
+   """
+    Run the trained YOLOv8-seg model on an image to locate and isolate the udder.
+    Returns a binary mask of the udder region plus its bounding box [x, y, w, h].
+    If no udder is detected, falls back to an empty mask covering the full image.
+    """
     results = yolo_model(image_bgr, verbose=False)
     for r in results:
         if r.masks is not None and len(r.masks.data) > 0:
@@ -52,7 +56,11 @@ def segment_udder(image_bgr):
     return np.zeros((h, w), dtype=np.uint8), [0, 0, w, h]
 
 def detect_inflammation(image_bgr, udder_mask):
-    # Detect red inflammation regions on the udder
+    """
+    Detect red/inflamed skin regions within the udder mask using HSV thresholding.
+    Two red hue ranges are combined since red wraps around the HSV hue circle (0 and 180).
+    Returns a binary mask of inflammation pixels, cleaned with morphological opening.
+    """
     hsv = cv2.cvtColor(image_bgr, cv2.COLOR_BGR2HSV)
     lower_red1 = np.array([0, 40, 50])
     upper_red1 = np.array([12, 255, 255])
@@ -67,8 +75,10 @@ def detect_inflammation(image_bgr, udder_mask):
     kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (3, 3))
     return cv2.morphologyEx(inflammation_mask, cv2.MORPH_OPEN, kernel)
 
-def analyze_image(image_input):
-    # Run full segmentation and calculate metrics
+def analyze_image(image_input): """
+    Run the full pipeline on a single image: load, segment the udder,
+    detect inflammation within it, and compute the inflammation index
+    """
     image_bgr = load_image_as_numpy(image_input)
     udder_mask, bbox = segment_udder(image_bgr)
     inflam_mask = detect_inflammation(image_bgr, udder_mask)
