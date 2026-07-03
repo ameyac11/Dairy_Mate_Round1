@@ -16,6 +16,9 @@ ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 ANNOTATIONS_PATH = os.path.join(ROOT_DIR, "Dataset", "annotations.json")
 MODEL_DIR = os.path.join(ROOT_DIR, "Model")
 
+# Our dataset has only 100 images (25 healthy / 75 mastitis) after the 80/20
+# train-val split, so we tune these conservatively to avoid overfitting:
+# --------------------------------------------------------------------------
 num_epochs = 30
 batch_size = 16
 learning_rate = 0.0001
