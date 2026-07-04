@@ -96,7 +96,8 @@ def train(model_name):
     print(f"\n--- Training {model_name} ---")
     model = get_model(model_name)
     criterion = nn.CrossEntropyLoss()
-    optimizer = optim.Adam(model.parameters(), lr=learning_rate)
+    optimizer = optim.AdamW(model.parameters(), lr=learning_rate, weight_decay=1e-2)
+    scheduler = optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=num_epochs)
     best_acc = 0.0
     
     for epoch in range(num_epochs):
@@ -119,6 +120,7 @@ def train(model_name):
             total_train += labels.size(0)
             correct_train += (predicted == labels).sum().item()
             
+        scheduler.step()
         train_acc = 100 * correct_train / total_train
         
         # Validation
@@ -136,7 +138,7 @@ def train(model_name):
         val_acc = 100 * correct_val / total_val
         print(f"Epoch {epoch+1}/{num_epochs} - Loss: {running_loss/len(train_loader):.4f} - Train: {train_acc:.1f}% - Val: {val_acc:.1f}%")
         
-        if val_acc >= best_acc:
+        if val_acc > best_acc:
             best_acc = val_acc
             os.makedirs(MODEL_DIR, exist_ok=True)
             save_model(model, os.path.join(MODEL_DIR, f"{model_name}_mastitis.safetensors"))
