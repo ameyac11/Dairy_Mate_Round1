@@ -3,12 +3,12 @@
  
 **An end-to-end machine learning pipeline for automated cattle udder health monitoring**
  
-[![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)](https://pytorch.org/)
-[![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-0099FF?style=flat-square)](https://ultralytics.com/)
-[![Gradio](https://img.shields.io/badge/Gradio-6.19.0-F97316?style=flat-square&logo=gradio&logoColor=white)](https://gradio.app/)
-[![License](https://img.shields.io/badge/License-Apache%202.0-green?style=flat-square)](https://github.com/ameyac11/Dairy_Mate_Round1/blob/main/LICENSE)
-[![HF Space](https://img.shields.io/badge/🤗%20Hugging%20Face-Live%20Demo-yellow?style=flat-square)](https://huggingface.co/spaces/ameyac11/Mastitis_Cow_Detection)
+[![Python](https://api.gitlytics.dev/api/badge/tech.svg?slug=python&style=icon_label_value&label=Language&label_color=%23555555&variant=plastic&value=Python%203.8%2B&value_color=%233776AB)](https://www.python.org/)
+[![PyTorch](https://api.gitlytics.dev/api/badge/tech.svg?slug=pytorch&style=icon_label_value&label=AI%2FML&label_color=%23555555&variant=plastic&value=PyTorch&value_color=%23EE4C2C)](https://pytorch.org/)
+[![YOLOv8](https://api.gitlytics.dev/api/badge/tech.svg?slug=pytorch&style=icon_label_value&label=ObjectDetection&label_color=%23555555&variant=plastic&value=YOLOv8&value_color=%230099FF)](https://ultralytics.com/)
+[![Gradio](https://api.gitlytics.dev/api/badge/tech.svg?slug=gradio&style=icon_label_value&label=UI&label_color=%23555555&variant=plastic&value=Gradio&value_color=%23F97316)](https://gradio.app/)
+[![License](https://api.gitlytics.dev/api/badge/tech.svg?slug=license&style=icon_label_value&label=License&label_color=%23555555&variant=plastic&value=Apache%202.0&value_color=%2328a745)](https://github.com/ameyac11/Dairy_Mate_Round1/blob/main/LICENSE)
+[![HF Space](https://api.gitlytics.dev/api/badge/tech.svg?slug=huggingface&style=icon_label_value&label=HF%20Space&label_color=%23555555&variant=plastic&value=Live%20Demo&value_color=%23FFD21E)](https://huggingface.co/spaces/ameyac11/Mastitis_Cow_Detection)
  
 🚀 **[Try the Live Demo](https://huggingface.co/spaces/ameyac11/Mastitis_Cow_Detection)**
  
